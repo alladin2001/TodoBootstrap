@@ -23,6 +23,7 @@ public class ToDoService {
     public List<ToDo> findAll() {
         return toDoRepo.findAll();
     }
+
     public void save(ToDo toDo, User user) {
         toDo.setCreateDate(LocalDate.now());
         toDo.setAuthor(user);

@@ -26,8 +26,9 @@
 <#--                                <td>${toDo.authorUsername}</td>-->
                                 <td>${toDo.createDate}</td>
                                 <td><#if toDo.targetDate??>${toDo.targetDate}<#else>None</#if></td>
-                                <td>
-                                        <a class="btn btn-success" href="/todo/${toDo.id}"><i class="fas fa-edit"></i></a>
+                                <td class="col-2" align="center">
+                                        <a class="btn btn-success" href="/todo/done/${toDo.id}"><i class="fas fa-check"></i></a>
+                                        <a class="btn btn-warning" href="/todo/${toDo.id}"><i class="far fa-edit"></i></a>
                                         <a class="btn btn-danger" href="/todo/delete/${toDo.id}"><i class="far fa-trash-alt"></i></a>
                                 </td>
                         </tr>

@@ -25,6 +25,9 @@ public class ToDo {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate targetDate;
 
+//    @NotEmpty
+//    private boolean done;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
